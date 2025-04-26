@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.library'
-    id 'maven-publish'
 }
 
 android {
@@ -10,7 +9,6 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 36
-        // Jangan pakai applicationId di library!
     }
 
     buildTypes {
@@ -25,28 +23,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
-    publishing {
-        singleVariant("release") { // ✅ Pastikan hanya release yang dipublikasikan
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
 }
 
 dependencies {
     // Kosong karena resource-only
-}
-
-
-publishing {
-    publications {
-        create("release", MavenPublication) { // ✅ Perbaikan cara membuat publication
-            afterEvaluate { // ✅ Pastikan komponen tersedia sebelum dieksekusi
-                from components.findByName("release") // ✅ Hindari properti yang belum ada saat evaluasi awal
-            }
-            groupId = 'com.github.Arifinazis'
-            artifactId = 'naddimens'
-            version = '1.0.0'
-        }
-    }
 }
