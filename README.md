@@ -41,7 +41,7 @@ dependencies {
 
 ## 🚀 Fitur Utama
 
-- ✅ Hanya resource (dimens, colors, styles) tanpa kode Java/Kotlin.
+- ✅ Hanya resource (dimens) tanpa kode Java/Kotlin.
 - ✅ Super ringan: cepat di-build dan hemat ukuran APK/AAB.
 - ✅ Struktur standar dan konsisten untuk skalabilitas UI.
 - ✅ Dukungan penuh AndroidX dan Material Design 3.
@@ -64,34 +64,17 @@ Setelah mengintegrasikan `naddimens`, kamu bisa langsung menggunakan resource-ny
     android:layout_margin="@dimen/margin_medium"
     android:padding="@dimen/padding_small" />
 ```
-
-**Contoh penggunaan colors:**
-
-```xml
-<TextView
-    android:textColor="@color/primary_text"
-    android:text="Primary Text" />
-```
-
----
-
 ## 📋 Struktur Resource
 
 | Folder | Keterangan |
 |:---|:---|
 | `values/dimens.xml` | Ukuran-ukuran standar (padding, margin, radius, elevation, text size) |
-| `values/colors.xml` | Warna standar untuk UI |
-| `values/styles.xml` | Style default untuk komponen UI |
-
 ---
 
 ## ✨ Roadmap
 
 - [x] Initial Release v1.0.0
-- [ ] Support Dark Theme
 - [ ] Tambah varian dimens untuk tablet & large screen
-- [ ] Integrasi Material You dynamic color (Android 12+)
-
 ---
 
 ## ❤️ Dukungan
@@ -114,4 +97,24 @@ Developed with ❤️ by [Arifinazis](https://github.com/Arifinazis)
 
 ## 📜 Lisensi
 
-Lisensi akan segera diumumkan.
+MIT License
+
+Copyright (c) 2024 Arifinazis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
