@@ -74,7 +74,7 @@ Setelah mengintegrasikan `naddimens`, kamu bisa langsung menggunakan resource-ny
 ## ✨ Roadmap
 
 - [x] Initial Release v1.0.0
-- [ ] Tambah varian dimens untuk tablet & large screen
+- [x] Tambah varian dimens untuk tablet & large screen
 ---
 
 ## ❤️ Dukungan
